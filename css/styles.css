@@ -1,0 +1,263 @@
+/*
+COLOR SCHEME 
+
+Dark olive green= #6e9457
+Light olive green= #8d9457
+Basil green= #579466
+Black= #000000
+White= #ffffff
+
+*/
+
+    
+/**********************************************************************
+                        default - mobile portrtait
+**********************************************************************/
+
+
+/*--------------------------------------------------------------------*/
+/*general*/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 2rem;
+}
+
+p{
+    font-family: 'Lato',Arial, Helvetica, Verdana,sans-serif;
+    line-height: 1.4;
+    font-size: 0.75rem;  
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #579466;
+    font-family: 'Roboto Slab',Times New Roman, Georgia, serif;
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.bottom-hr {
+    margin-bottom: 30px;
+    border: 2px solid #579466;
+}
+
+.top-hr {
+    margin-top: 40px;
+    border: 2px solid #579466;
+}
+/*--------------------------------------------------------------------*/
+/*masthead banner*/
+.masthead{
+ position: relative;   
+}
+
+.masthead img{
+  filter: brightness(50%);
+  position: absolute;
+  top:-1rem;
+  z-index: -1;
+}
+
+.masthead h1{
+  font-family: 'Roboto Slab',Times New Roman, Georgia, serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 5rem;
+  color:White;
+}
+
+.masthead h2{
+  font-family: 'Lato',Arial, Helvetica, Verdana,sans-serif;
+  font-size: 1rem;
+  background-color:#579466;
+  color: black;
+  text-align: center;
+  margin-top: 1rem;
+  padding:0.3rem 1rem;
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------------------------*/
+/*nav menu*/
+
+
+nav ul {
+    list-style: none;
+    margin-top:4.7rem;
+    overflow: hidden;
+    width: 100%;
+    background-color: #6e9457;
+}
+
+
+nav ul li a {
+    font-family: 'Lato',Arial, Helvetica, Verdana,sans-serif;
+    font-size:0.8rem;
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+/*--------------------------------------------------------------------*/
+/*content buttons*/
+
+button {
+    width: 7rem;
+    overflow: hidden;
+    border: solid 1px black;
+    font-size: 0.8rem;
+    margin-top:1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.button-content button {
+   display: inline-block;
+   padding: 1rem 1.5rem;
+   color: #000;
+    
+}
+ 
+.button-content {
+    display: inline-block;
+    text-align: center;
+}
+
+#active-button {
+    background-color: #6e9457;
+    color: white;
+}
+
+.main-content {
+    margin-bottom: 40px;
+}
+
+.button-content button:hover {
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------------*/
+/*footer*/
+
+footer {
+    padding-bottom: 10px;
+}
+
+footer p{
+   text-align: center;
+}
+
+
+footer a:hover {
+    opacity: 0.75;
+}
+
+.right-content p {
+    text-indent: 40px;
+}
+
+.right-content {
+    margin-top: 20px;
+}
+.social-media ul{
+    text-align: center;
+}
+.social-media ul li{
+    display: inline-block;
+    
+}
+.social-media ul li a{
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 2rem;
+    color: #6e9457;
+}
+    
+.social-media ul li a:hover {
+    border-bottom: solid 3px #fff;
+    padding-bottom: 3px;
+} 
+
+
+
+/*--------------------------------------------------------------------*/
+/*Responsive Media Queries*/
+
+/**********************************************************************
+                        Custom Media Query - 30rem and up
+**********************************************************************/
+@media only screen and (min-width:30rem){
+    
+   .wrapper {
+       max-width: 60rem;
+       margin-left: auto;
+       margin-right:auto;
+    }
+    header{
+       max-width: 60rem;
+       margin-left: auto;
+       margin-right:auto;
+    }
+    p {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        width: 20%;
+        margin: 0.5% 2%;
+    }
+    
+    nav ul li a {
+        display: inline-block;
+        padding: 10px 0;
+    }
+    
+    nav ul li a:hover {
+        border-bottom: solid 3px #fff;
+        padding-bottom: 3px;
+    } 
+    
+    
+}
+
+/**********************************************************************
+                        Custom Media Query - 30rem and up
+**********************************************************************/
+@media only screen and (min-width:40rem){
+    
+    .main-content img {
+        max-width: 20rem;
+        float: left;
+        margin: 2rem;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+}
